@@ -1,0 +1,43 @@
+$mainColor: rgb(17, 154, 108);
+$secondaryColor: rgb(219, 230, 227);
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+h1{
+    color: $mainColor;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 500px;
+
+}
+
+input{
+    background-color: $secondaryColor;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 700;
+    border: solid $mainColor 0.7px ;
+}

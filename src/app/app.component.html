@@ -1,1 +1,23 @@
-Test API
+<div class="cont">
+    
+    <div class="container">
+        <h1>Bootifultests API Test 😎</h1>
+      <h2>Current Number: {{ current }}</h2>
+      <input value="Get current number" (click)="getCurrentNum()" type="button" />
+    </div>
+    
+    <div class="container">
+      <h2>Add a Number</h2>
+      <input [(ngModel)]="textNumber" type="text" />
+      <input value="Add" (click)="addNum()" type="button" />
+      <h2>Addition Result: {{result}}</h2>
+    </div>
+    
+    <div class="container">
+      <h2>Accumulate a Number</h2>
+      <input [(ngModel)]="textNumberAcc" type="text" />
+      <input value="Acuumulate" (click)="accumulate()" type="button" />
+      <h2>Accumulation Result: {{resultAcc}}</h2>
+    </div>
+
+</div>
