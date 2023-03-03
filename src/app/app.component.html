@@ -1,20 +1,19 @@
 <div class="cont">
-
     <div class="container">
         <h1>Bootifultests API Test 😎</h1>
-      <h2>Current Number: {{ current }}</h2>
-      <input  value="Get current number" (click)="getCurrentNum()" type="button" />
+      <h2 id="currentNumberText">Current Number: {{ current }}</h2>
+      <input id="currentNumberClick" value="Get current number" (click)="getCurrentNum()" type="button" />
     </div>
     <div class="container">
       <h2>Add a Number</h2>
-      <input id="addText" [(ngModel)]="textNumber" type="text" />
+      <input id="addText" [(ngModel)]="textNumber" type="number" />
       <input id="addButton" value="Add" (click)="addNum()" type="button" />
       <h2 id="addRes">Addition Result: {{result}}</h2>
     </div>
 
     <div class="container">
       <h2>Accumulate a Number</h2>
-      <input id="accuText" [(ngModel)]="textNumberAcc" type="text" />
+      <input id="accuText" [(ngModel)]="textNumberAcc" type="number" />
       <input id="accuButton" value="Acuumulate" (click)="accumulate()" type="button" />
       <h2 id="accuRes">Accumulation Result: {{resultAcc}}</h2>
     </div>
